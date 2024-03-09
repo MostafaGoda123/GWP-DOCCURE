@@ -1,0 +1,92 @@
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 8% 0 ;   }
+header ul.largeMedia {
+   background-color: var(--bgHeader );
+   padding: 1rem 2rem;
+   border-radius: 10rem ;
+   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+   display: flex;
+   align-items: center;
+   gap: 1.5rem ;   }
+header ul.largeMedia li a {
+   font-size: 1.5rem;
+   color: white;
+   color: var(--subTitleColor);
+   transition: 0.4s;   }
+header ul.largeMedia li a:hover {
+   color: var(--blueColor);   }
+header button {
+   width: 4rem ;
+   height: 4rem ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--bgHeader) ;
+   color: var(--subTitleColor);
+   transition: 0.4s;
+   border: 1px solid rgba(250, 128, 114, 0.2);
+   border-radius: 50% ;
+   font-size: 2rem ;   }
+header button.icon-menu {
+   display: none ;   }
+header button:hover {
+   border: 1px solid salmon;
+   color: var(--titleColor);   }
+header nav {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background: rgb(39,39,42,0.9) ;
+   padding: 5vh 10% ;
+   backdrop-filter: blur(2px) ;   }
+header nav ul {
+   animation: move 0.7s 1;
+   width: 100% ;
+   background-color: var(--primaryColor);
+   padding: 2rem ;
+   border-radius: 2rem ;   }
+header nav ul li a {
+   color: white;
+   display: block;
+   transition: 0.4s;
+   padding: 1rem ;
+   border-bottom: 1px solid var(--borderColor);   }
+header nav ul li a:hover {
+   color: var(--blueColor);   }
+header nav ul li:first-of-type button {
+   margin-left: auto;
+   background: transparent ;
+   transition: 0.4s ;
+   border: 0;   }
+header nav ul li:first-of-type button:hover {
+   color: red ;
+   scale: 1.1;
+   transform: rotate(180deg);   }
+header nav ul li:first-of-type {
+   margin-bottom: -1.5rem;
+   border: 0 ;
+   padding: 0 ;  }
+header nav ul li:last-of-type a {
+   border: none ;   }
+@keyframes move {
+   0% { scale: 0; }
+   60% { scale: 1.2; }
+   100% { scale: 1; }   }
+@media (max-width : 768px) {
+   header ul.largeMedia {
+      display: none;
+   }
+   header button.icon-menu {
+      display: block ;   
+   }}
+/*------------------*/
+.icon-sun {
+   color: orange;   }
+.icon-sun:hover {
+   color: orangered;   }
+/*------------------*/
