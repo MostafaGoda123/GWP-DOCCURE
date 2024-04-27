@@ -1,0 +1,107 @@
+.signIn {
+   height: 100vh;
+   display: flex;   }
+.signIn .box {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   align-items: center;
+   justify-content: center;   }
+form {
+   display: flex;
+   gap: 2rem ;
+   flex-direction: column;
+   font-size: 1.8rem;   }
+form h2 {
+   margin-bottom: -1rem;
+   color: var(--mainColor);   }
+form P {
+   color: var(--textColor);   }
+form .inp {
+   font-size: 1.6rem ;   }
+form .inp input {
+   width: 100%;
+   padding: 0.8rem ;
+   margin-top: 0.3rem;
+   border-radius: 1rem ;
+   outline: none ;
+   border: 1px solid #ccc;   }
+form .inp input[type = "checkbox"] {
+   width: fit-content;
+   margin-right: 1rem ;   }
+form button {
+   cursor: pointer;
+   padding: 1rem ;
+   background: var(--mainColor);
+   color: white;
+   border: 0;
+   outline: 0;
+   border-radius: 1rem;   }
+form h6 {
+   font-weight: normal;
+   font-size: 1.6rem ;
+   text-align: center;   }
+form h6 a {
+   color: var(--mainColor);   }
+.img {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url('../../images/background.png');
+   background-position: center;
+   background-size: cover;   }
+@media (max-width : 768px) {
+   .signIn {
+      flex-direction: column-reverse;
+   }
+   .signIn .box {
+      width: 100%;
+   }
+   .signIn .img {
+      width: 100%;
+      height: 50%;
+   }
+   .signIn .img img {
+      width: 80%;
+   }   }
+/*-----------------*/
+.signUp {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 2rem ;
+   padding: 5vh 0;
+   position: relative;   }
+.signUp::before {
+   z-index: -10;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 50%;
+   background-image: url(../../images/background.png);   }
+.signUp img {
+   margin-bottom: -3rem;
+   width: 40rem ;   }
+.signUp h2 {
+   font-size: 2.5rem ;
+   color: white;   }
+.signUp p {
+   max-width: 40rem ;
+   font-size: 1.6rem;
+   color: white;
+   text-align: center;   }
+.signUp form {
+   width: 40rem ;
+   padding: 4rem ;
+   border-radius: 1rem;
+   background-color: white;
+   box-shadow: 0 0 1rem rgba(102, 102, 102, 0.3);   }
+/*-----------------*/
